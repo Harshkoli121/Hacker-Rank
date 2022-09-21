@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string a,b;
+    cin>>a>>b;
+    int lena=a.size();
+    int lenb=b.size();
+    cout<<lena<<" ";
+    cout<<lenb<<endl;
+    string c=a+b;
+    cout<<c<<endl;
+    char c0=a[0];
+    a[0]=b[0];
+    b[0]=c0;
+    cout<<a<<" ";
+    cout<<b;
+    
+}
