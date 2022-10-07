@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+  int N, sum1 = 0, sum2 = 0;
+  cin >> N;
+  int a[N][N];
+  for (int i = 0; i < N; i++) 
+  {
+    for (int j = 0; j < N; j++) 
+    {
+      cin >> a[i][j];
+      if (i == j) 
+   {
+        sum1 = sum1 + a[i][j];
+      }
+    }
+  }
+
+  for (int i = 0; i < N; i++) 
+  {
+    for (int j = N - 1 - i; j >= 0;) 
+    {
+      sum2 = sum2 + a[i][j];
+      break;
+    }
+  }
+  cout << abs(sum1 - sum2) << endl;
+  return 0;
+}
