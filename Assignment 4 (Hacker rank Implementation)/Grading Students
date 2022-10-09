@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n,n1;
+     cin>>n;
+     for(int i=0; i<n; i++){
+        cin>>n1;
+        if(n1>=38 and n1%5>=3){
+          while(n1%5!=0){
+               n1++;
+           }
+        }
+        cout<< n1<<endl;
+     }
+     
+}
+//int main(){
+  //  grading();
+   // return 0;
+//}
+    
